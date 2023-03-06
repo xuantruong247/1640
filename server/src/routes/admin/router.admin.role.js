@@ -1,69 +1,72 @@
-const express = require('express')
-const { BadRequestError, ValidationError, NotFoundError } = require('../../utils/error-app')
-const router = express.Router()
-const RoleService = require('../../services/admin/service.admin.role')
-const roleService = new RoleService()
+const express = require("express");
+const { ValidationError } = require("../../utils/error-app");
+const router = express.Router();
+const RoleService = require("../../services/admin/service.admin.role");
+const roleService = new RoleService();
 
 //Find all
-router.get('/', async (req, res, next) => {
+router.get("/", async(req, res, next) => {
     try {
-        const roles = await roleService.find()
-        return res.json(roles)
+        const roles = await roleService.find();
+        return res.json(roles);
     } catch (err) {
-        next(err)
+        next(err);
     }
-})
+});
 
 //Create Role
-router.post('/', async (req, res, next) => {
-    try{
-        const {name, desc} = req.body
-
-        if(!name) throw new ValidationError('Missing Text')
-
-        const createdRole = await roleService.create(req.body)
-
-        return res.json(createdRole)
-    } catch(err) {
-        next(err)
-    }
-})
-
-//Fine One 
-router.get('/:id', async (req, res, next) => {
+router.post("/", async(req, res, next) => {
     try {
-        const {id} = req.params
+        const { name, desc } = req.body;
 
-        const foundRole = await roleService.findOne(id)
+        if (!name) throw new ValidationError("Missing Text");
 
-        return res.json(foundRole)
+        const createdRole = await roleService.create(req.body);
+
+        return res.json(createdRole);
     } catch (err) {
-        next(err)
+        next(err);
     }
-})
+});
+
+//Fine One
+router.get("/:id", async(req, res, next) => {
+    try {
+        const { id } = req.params;
+
+        const foundRole = await roleService.findOne(id);
+
+        return res.json(foundRole);
+    } catch (err) {
+        next(err);
+    }
+});
 
 //Update
-router.patch('/:id', async (req, res, next) => {
+router.patch("/:id", async(req, res, next) => {
     try {
-        const {name, desc} = req.body
+        const { name, desc } = req.body;
+        const { id } = req.params;
 
-        if(!name) throw new ValidationError('Missing Text')
+        if (!name) throw new ValidationError("Missing Text");
 
-        const updatedRole = await roleService.update(id, req.body)
-        
-        return res.json(updatedRole)
+        const updatedRole = await roleService.update(id, req.body);
+
+        return res.json(updatedRole);
     } catch (err) {
-        next(err)
+        next(err);
     }
-})
+});
 
-router.delete('/:id', async (req, res, next) => {
+router.delete("/:id", async(req, res, next) => {
     try {
-        const deletedRole = await roleService.delete(id)
-        return res.json(deletedRole)
-    } catch (err) {
-        next(err)
-    }
-})
+        const { id } = req.params;
 
-module.exports = router
+        const deletedRole = await roleService.delete(id);
+        return res.json(deletedRole);
+    } catch (err) {
+        next(err);
+    }
+});
+
+module.exports = router;
