@@ -1,8 +1,5 @@
 const express = require("express");
 const router = express.Router();
-const User = require("../../models/user");
-const Role = require("../../models/role");
-
 const UserServer = require("../../services/admin/service.admin.user");
 const { ValidationError } = require("../../utils/error-app");
 const userServer = new UserServer();

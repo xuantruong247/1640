@@ -64,3 +64,17 @@
 {"level":"error","message":"Sat Mar 04 2023 23:44:33 GMT+0700 (Indochina Time)-{}","private":true}
 {"level":"error","message":"Mon Mar 06 2023 11:44:49 GMT+0700 (Indochina Time)-{\"name\":\"NOT FOUND\",\"statusCode\":400,\"isOperational\":true,\"errorStack\":\"Role existed\"}","private":true}
 {"level":"error","message":"Mon Mar 06 2023 11:44:59 GMT+0700 (Indochina Time)-{\"name\":\"NOT FOUND\",\"statusCode\":400,\"isOperational\":true,\"errorStack\":\"Role existed\"}","private":true}
+{"level":"error","message":"Mon Mar 06 2023 19:55:57 GMT+0700 (Indochina Time)-{}","private":true}
+{"level":"error","message":"Mon Mar 06 2023 19:58:41 GMT+0700 (Indochina Time)-{}","private":true}
+{"level":"error","message":"Mon Mar 06 2023 19:58:47 GMT+0700 (Indochina Time)-{}","private":true}
+{"level":"error","message":"Mon Mar 06 2023 19:59:43 GMT+0700 (Indochina Time)-{\"name\":\"NOT FOUND\",\"statusCode\":400,\"isOperational\":true,\"errorStack\":\"Category existed\"}","private":true}
+{"level":"error","message":"Mon Mar 06 2023 20:00:17 GMT+0700 (Indochina Time)-{}","private":true}
+{"level":"error","message":"Mon Mar 06 2023 20:00:23 GMT+0700 (Indochina Time)-{}","private":true}
+{"level":"error","message":"Mon Mar 06 2023 20:17:57 GMT+0700 (Indochina Time)-{\"name\":\"NOT FOUND\",\"statusCode\":400,\"isOperational\":true,\"errorStack\":\"Category not existed\"}","private":true}
+{"level":"error","message":"Mon Mar 06 2023 20:18:12 GMT+0700 (Indochina Time)-{\"name\":\"NOT FOUND\",\"statusCode\":404,\"isOperational\":true,\"errorStack\":\"Not found category\"}","private":true}
+{"level":"error","message":"Mon Mar 06 2023 20:18:46 GMT+0700 (Indochina Time)-{}","private":true}
+{"level":"error","message":"Mon Mar 06 2023 20:22:01 GMT+0700 (Indochina Time)-{}","private":true}
+{"level":"error","message":"Mon Mar 06 2023 21:11:13 GMT+0700 (Indochina Time)-{\"name\":\"BAD REQUEST\",\"statusCode\":400,\"isOperational\":true,\"errorStack\":\"Missing Text\"}","private":true}
+{"level":"error","message":"Mon Mar 06 2023 21:13:16 GMT+0700 (Indochina Time)-{\"expose\":true,\"statusCode\":400,\"status\":400,\"body\":\"{\\r\\n    \\\"name\\\": \\\"submission 1\\\"\\r\\n    \\\"desc\\\":\\\"submission 1\\\",\\r\\n    \\r\\n}\",\"type\":\"entity.parse.failed\"}","private":true}
+{"level":"error","message":"Mon Mar 06 2023 21:14:04 GMT+0700 (Indochina Time)-{\"name\":\"NOT FOUND\",\"statusCode\":400,\"isOperational\":true,\"errorStack\":\"Submission existed\"}","private":true}
+{"level":"error","message":"Mon Mar 06 2023 21:18:40 GMT+0700 (Indochina Time)-{}","private":true}
