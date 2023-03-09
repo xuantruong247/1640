@@ -3,10 +3,11 @@ const { ValidationError } = require("../../utils/error-app");
 const router = express.Router();
 const RoleService = require("../../services/commons/service.role");
 const roleService = new RoleService();
+const { verifyToken, isAdmin } = require("../../middlewares/auth")
 
 
 //Find all
-router.get("/",  async(req, res, next) => {
+router.get("/", verifyToken, isAdmin, async (req, res, next) => {
     try {
         const roles = await roleService.find();
         return res.json(roles);
@@ -16,7 +17,7 @@ router.get("/",  async(req, res, next) => {
 });
 
 //Create Role
-router.post("/", async(req, res, next) => {
+router.post("/", async (req, res, next) => {
     try {
         const { name, desc } = req.body;
 
@@ -31,7 +32,7 @@ router.post("/", async(req, res, next) => {
 });
 
 //Fine One
-router.get("/:id", async(req, res, next) => {
+router.get("/:id", async (req, res, next) => {
     try {
         const { id } = req.params;
 
@@ -44,7 +45,7 @@ router.get("/:id", async(req, res, next) => {
 });
 
 //Update
-router.patch("/:id", async(req, res, next) => {
+router.patch("/:id", async (req, res, next) => {
     try {
         const { name, desc } = req.body;
         const { id } = req.params;
@@ -59,7 +60,7 @@ router.patch("/:id", async(req, res, next) => {
     }
 });
 
-router.delete("/:id", async(req, res, next) => {
+router.delete("/:id", async (req, res, next) => {
     try {
         const { id } = req.params;
 

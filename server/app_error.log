@@ -92,3 +92,9 @@
 {"level":"error","message":"Thu Mar 09 2023 22:51:12 GMT+0700 (Indochina Time)-{\"name\":\"Forbidden\",\"statusCode\":403,\"isOperational\":true,\"errorStack\":\"Un Authorized\"}","private":true}
 {"level":"error","message":"Thu Mar 09 2023 22:51:53 GMT+0700 (Indochina Time)-{\"name\":\"Forbidden\",\"statusCode\":403,\"isOperational\":true,\"errorStack\":\"Un Authorized\"}","private":true}
 {"level":"error","message":"Thu Mar 09 2023 22:51:57 GMT+0700 (Indochina Time)-{\"name\":\"Forbidden\",\"statusCode\":403,\"isOperational\":true,\"errorStack\":\"Un Authorized\"}","private":true}
+{"level":"error","message":"Fri Mar 10 2023 01:22:20 GMT+0700 (Indochina Time)-{\"name\":\"BAD REQUEST\",\"statusCode\":400,\"isOperational\":true,\"errorStack\":\"Missing Text\"}","private":true}
+{"level":"error","message":"Fri Mar 10 2023 01:23:18 GMT+0700 (Indochina Time)-{\"name\":\"BAD REQUEST\",\"statusCode\":400,\"isOperational\":true,\"errorStack\":\"Missing Text\"}","private":true}
+{"level":"error","message":"Fri Mar 10 2023 01:23:39 GMT+0700 (Indochina Time)-{\"name\":\"BAD REQUEST\",\"statusCode\":400,\"isOperational\":true,\"errorStack\":\"Missing Text\"}","private":true}
+{"level":"error","message":"Fri Mar 10 2023 01:25:22 GMT+0700 (Indochina Time)-{}","private":true}
+{"level":"error","message":"Fri Mar 10 2023 01:26:03 GMT+0700 (Indochina Time)-{}","private":true}
+{"level":"error","message":"Fri Mar 10 2023 01:27:01 GMT+0700 (Indochina Time)-{}","private":true}

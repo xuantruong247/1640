@@ -40,8 +40,11 @@ const ideaSchema = mongoose.Schema({
         }
     },
     submission: {
-        type: mongoose.Types.ObjectId,
-        ref: 'submission'
+        id: {
+            type: mongoose.Types.ObjectId,
+            ref: 'submission'
+        },
+        name: String
     },
     // files: [{
     //     fileName: {
