@@ -1,6 +1,6 @@
 const express = require("express");
 const router = express.Router();
-const CategoryService = require("../../services/admin/service.admin.category");
+const CategoryService = require("../../services/commons/service.category");
 const { ValidationError } = require("../../utils/error-app");
 const categoryService = new CategoryService();
 

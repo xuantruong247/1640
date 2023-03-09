@@ -1,11 +1,12 @@
 const express = require("express");
 const { ValidationError } = require("../../utils/error-app");
 const router = express.Router();
-const RoleService = require("../../services/admin/service.admin.role");
+const RoleService = require("../../services/commons/service.role");
 const roleService = new RoleService();
 
+
 //Find all
-router.get("/", async(req, res, next) => {
+router.get("/",  async(req, res, next) => {
     try {
         const roles = await roleService.find();
         return res.json(roles);

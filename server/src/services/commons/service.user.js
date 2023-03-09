@@ -1,6 +1,7 @@
 const User = require("../../models/user");
 const { BadRequestError, NotFoundError } = require("../../utils/error-app");
-const RoleService = require("../../services/admin/service.admin.role");
+const RoleService = require("./service.role");
+const { HashPassword } = require("../../utils");
 const roleService = new RoleService();
 
 class UserServer {
@@ -9,8 +10,8 @@ class UserServer {
         return users;
     }
 
-    async findOne(id) {
-        const foundUser = await User.findById(id);
+    async findOne(conditions, selections) {
+        const foundUser = await User.findOne(conditions, selections);
         if (!foundUser) throw NotFoundError("Not found user");
         return foundUser;
     }
@@ -22,10 +23,11 @@ class UserServer {
             throw new BadRequestError("User existed");
 
         const foundRole = await roleService.findOne(role_id);
+        const hashPassword = await HashPassword(password)
 
         const newUser = new User({
             username,
-            password,
+            password: hashPassword,
             profile: {
                 first_name,
                 last_name,

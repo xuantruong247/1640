@@ -1,6 +1,6 @@
 const express = require("express");
 const router = express.Router();
-const UserServer = require("../../services/admin/service.admin.user");
+const UserServer = require("../../services/commons/service.user");
 const { ValidationError } = require("../../utils/error-app");
 const userServer = new UserServer();
 
@@ -19,7 +19,7 @@ router.post("/", async(req, res, next) => {
     try {
         const { username, password, first_name, last_name, role_id } = req.body;
 
-        if (!username || !password) throw new ValidationError("Missing Text");
+        if (!username || !password || !role_id) throw new ValidationError("Missing Text");
 
         const createdUser = await userServer.create(req.body);
         return res.json(createdUser);
