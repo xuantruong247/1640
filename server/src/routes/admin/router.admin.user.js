@@ -10,7 +10,6 @@ router.get("/", async(req, res, next) => {
         const users = await userServer.find();
         return res.json(users);
     } catch (err) {
-        console.log(err);
         next(err);
     }
 });
