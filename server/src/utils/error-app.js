@@ -42,6 +42,20 @@ class ValidationError extends BaseError {
     }
 }
 
+//401
+class UnAuthenticated extends BaseError {
+    constructor(errorStack){
+        super('Un Authorized', STATUS_CODES.UN_AUTHORIZED,'Un Authorized Error',true, errorStack);
+    }
+}
+
+//403
+class UnAuthorized extends BaseError {
+    constructor(errorStack){
+        super('Forbidden', STATUS_CODES.FORBIDDEN,'Forbidden Error',true, errorStack);
+    }
+}
+
 //404
 class NotFoundError extends BaseError {
     constructor(errorStack){
@@ -62,5 +76,7 @@ module.exports = {
     ValidationError,
     STATUS_CODES,
     NotFoundError,
-    InternalError
+    InternalError,
+    UnAuthorized,
+    UnAuthenticated
 }

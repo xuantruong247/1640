@@ -1,7 +1,7 @@
 const express = require("express");
 const { ValidationError } = require("../../utils/error-app");
 const router = express.Router();
-const SubmissionService = require("../../services/admin/service.admin.submission");
+const SubmissionService = require("../../services/commons/service.submission");
 const submissionService = new SubmissionService();
 
 //Find all

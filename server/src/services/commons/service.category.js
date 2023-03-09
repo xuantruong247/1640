@@ -5,8 +5,8 @@ const { BadRequestError, NotFoundError } = require("../../utils/error-app");
 class CategoryService {
     //find all
     async find() {
-            const categorys = await Category.find()
-            return categorys
+            const categories = await Category.find()
+            return categories
         }
         //create
     async create(category) {

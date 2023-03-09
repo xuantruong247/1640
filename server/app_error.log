@@ -78,3 +78,17 @@
 {"level":"error","message":"Mon Mar 06 2023 21:13:16 GMT+0700 (Indochina Time)-{\"expose\":true,\"statusCode\":400,\"status\":400,\"body\":\"{\\r\\n    \\\"name\\\": \\\"submission 1\\\"\\r\\n    \\\"desc\\\":\\\"submission 1\\\",\\r\\n    \\r\\n}\",\"type\":\"entity.parse.failed\"}","private":true}
 {"level":"error","message":"Mon Mar 06 2023 21:14:04 GMT+0700 (Indochina Time)-{\"name\":\"NOT FOUND\",\"statusCode\":400,\"isOperational\":true,\"errorStack\":\"Submission existed\"}","private":true}
 {"level":"error","message":"Mon Mar 06 2023 21:18:40 GMT+0700 (Indochina Time)-{}","private":true}
+{"level":"error","message":"Thu Mar 09 2023 22:14:24 GMT+0700 (Indochina Time)-{}","private":true}
+{"level":"error","message":"Thu Mar 09 2023 22:15:37 GMT+0700 (Indochina Time)-{}","private":true}
+{"level":"error","message":"Thu Mar 09 2023 22:15:44 GMT+0700 (Indochina Time)-{}","private":true}
+{"level":"error","message":"Thu Mar 09 2023 22:15:59 GMT+0700 (Indochina Time)-{}","private":true}
+{"level":"error","message":"Thu Mar 09 2023 22:18:30 GMT+0700 (Indochina Time)-{}","private":true}
+{"level":"error","message":"Thu Mar 09 2023 22:21:49 GMT+0700 (Indochina Time)-{}","private":true}
+{"level":"error","message":"Thu Mar 09 2023 22:21:50 GMT+0700 (Indochina Time)-{}","private":true}
+{"level":"error","message":"Thu Mar 09 2023 22:28:07 GMT+0700 (Indochina Time)-{\"expose\":true,\"statusCode\":400,\"status\":400,\"body\":\"{\\r\\n    \\\"username\\\": \\\"tdhieu23\\\",\\r\\n    \\\"password\\\": \\\"tdhieu23\\\",\\r\\n    \\r\\n}\",\"type\":\"entity.parse.failed\"}","private":true}
+{"level":"error","message":"Thu Mar 09 2023 22:42:19 GMT+0700 (Indochina Time)-{\"name\":\"Un Authorized\",\"statusCode\":401,\"isOperational\":true,\"errorStack\":\"Un Authorized\"}","private":true}
+{"level":"error","message":"Thu Mar 09 2023 22:42:27 GMT+0700 (Indochina Time)-{\"name\":\"Un Authorized\",\"statusCode\":401,\"isOperational\":true,\"errorStack\":\"Un Authorized\"}","private":true}
+{"level":"error","message":"Thu Mar 09 2023 22:49:07 GMT+0700 (Indochina Time)-{\"name\":\"Forbidden\",\"statusCode\":403,\"isOperational\":true,\"errorStack\":\"Un Authorized\"}","private":true}
+{"level":"error","message":"Thu Mar 09 2023 22:51:12 GMT+0700 (Indochina Time)-{\"name\":\"Forbidden\",\"statusCode\":403,\"isOperational\":true,\"errorStack\":\"Un Authorized\"}","private":true}
+{"level":"error","message":"Thu Mar 09 2023 22:51:53 GMT+0700 (Indochina Time)-{\"name\":\"Forbidden\",\"statusCode\":403,\"isOperational\":true,\"errorStack\":\"Un Authorized\"}","private":true}
+{"level":"error","message":"Thu Mar 09 2023 22:51:57 GMT+0700 (Indochina Time)-{\"name\":\"Forbidden\",\"statusCode\":403,\"isOperational\":true,\"errorStack\":\"Un Authorized\"}","private":true}

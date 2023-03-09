@@ -1,7 +1,7 @@
 const express = require("express");
 const { ValidationError } = require("../../utils/error-app");
 const router = express.Router();
-const DepartmentService = require("../../services/admin/service.admin.department");
+const DepartmentService = require("../../services/commons/service.department");
 const departmentService = new DepartmentService();
 
 //Find all

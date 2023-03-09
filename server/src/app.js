@@ -11,6 +11,8 @@ const adminCategoryRouter = require("./routes/admin/router.admin.category")
 const adminDepartmentRouter = require("./routes/admin/router.admin.department")
 const adminSubmissionRouter = require("./routes/admin/router.admin.submission")
 const adminIdeaRouter = require("./routes/admin/router.admin.idea")
+const authRouter = require("./routes/auth/router.auth")
+
 
 const START_APP = async() => {
     const app = express();
@@ -19,8 +21,11 @@ const START_APP = async() => {
 
     app.use(express.json())
 
+    //auth
+    app.use('/auth', authRouter)
+
     // admin
-    app.use('/admin/user', adminUserRouter)
+    app.use('/admin/user',  adminUserRouter)
     app.use('/admin/role', adminRoleRouter)
     app.use('/admin/category', adminCategoryRouter)
     app.use('/admin/department', adminDepartmentRouter)
