@@ -16,13 +16,13 @@ router.get("/", async (req, res, next) => {
 })
 
 
-//create 
+//create admin 
 router.post("/", async (req, res, next) => {
     try {
-        const { title, desc, content, category_id, user_id, submission_id } = req.body
+        const { title, desc, content, category_id, submission_id, user_id } = req.body
 
 
-        if (!title || !category_id || !user_id || !submission_id)
+        if (!title || !category_id || !submission_id || !user_id)
             throw new ValidationError("Missting Text")
 
         const createdIdea = await ideaService.create(req.body)

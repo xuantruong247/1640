@@ -98,3 +98,15 @@
 {"level":"error","message":"Fri Mar 10 2023 01:25:22 GMT+0700 (Indochina Time)-{}","private":true}
 {"level":"error","message":"Fri Mar 10 2023 01:26:03 GMT+0700 (Indochina Time)-{}","private":true}
 {"level":"error","message":"Fri Mar 10 2023 01:27:01 GMT+0700 (Indochina Time)-{}","private":true}
+{"level":"error","message":"Fri Mar 10 2023 09:37:07 GMT+0700 (Indochina Time)-{}","private":true}
+{"level":"error","message":"Fri Mar 10 2023 09:41:42 GMT+0700 (Indochina Time)-{\"name\":\"Un Authorized\",\"statusCode\":401,\"isOperational\":true,\"errorStack\":\"Un Authenticated\"}","private":true}
+{"level":"error","message":"Fri Mar 10 2023 09:49:39 GMT+0700 (Indochina Time)-{}","private":true}
+{"level":"error","message":"Fri Mar 10 2023 09:49:44 GMT+0700 (Indochina Time)-{}","private":true}
+{"level":"error","message":"Fri Mar 10 2023 09:51:11 GMT+0700 (Indochina Time)-{}","private":true}
+{"level":"error","message":"Fri Mar 10 2023 09:53:00 GMT+0700 (Indochina Time)-{}","private":true}
+{"level":"error","message":"Fri Mar 10 2023 09:56:33 GMT+0700 (Indochina Time)-{}","private":true}
+{"level":"error","message":"Fri Mar 10 2023 09:57:10 GMT+0700 (Indochina Time)-{}","private":true}
+{"level":"error","message":"Fri Mar 10 2023 09:57:48 GMT+0700 (Indochina Time)-{}","private":true}
+{"level":"error","message":"Fri Mar 10 2023 09:58:01 GMT+0700 (Indochina Time)-{}","private":true}
+{"level":"error","message":"Sat Mar 11 2023 00:20:25 GMT+0700 (Indochina Time)-{}","private":true}
+{"level":"error","message":"Sat Mar 11 2023 00:41:11 GMT+0700 (Indochina Time)-{\"name\":\"NOT FOUND\",\"statusCode\":400,\"isOperational\":true,\"errorStack\":\"Title existed\"}","private":true}

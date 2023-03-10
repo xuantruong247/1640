@@ -19,6 +19,13 @@ const ideaSchema = mongoose.Schema({
         },
         name: String
     },
+    submission: {
+        id: {
+            type: mongoose.Types.ObjectId,
+            ref: 'submission'
+        },
+        name: String
+    },
     user: {
         id: {
             type: mongoose.Types.ObjectId,
@@ -38,13 +45,6 @@ const ideaSchema = mongoose.Schema({
                 avatar_path: String
             },
         }
-    },
-    submission: {
-        id: {
-            type: mongoose.Types.ObjectId,
-            ref: 'submission'
-        },
-        name: String
     },
     // files: [{
     //     fileName: {

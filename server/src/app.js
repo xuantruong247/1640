@@ -13,6 +13,9 @@ const adminSubmissionRouter = require("./routes/admin/router.admin.submission")
 const adminIdeaRouter = require("./routes/admin/router.admin.idea")
 const authRouter = require("./routes/auth/router.auth")
 
+//User 
+const userIdeaRouter = require("./routes/user/router.user.idea")
+
 
 const START_APP = async() => {
     const app = express();
@@ -31,6 +34,8 @@ const START_APP = async() => {
     app.use('/admin/department', adminDepartmentRouter)
     app.use('/admin/submission', adminSubmissionRouter)
     app.use('/admin/idea', adminIdeaRouter)
+
+    app.use('/user/idea', userIdeaRouter)
 
     app.use(ErrorHandler)
 

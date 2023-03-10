@@ -19,16 +19,18 @@ class IdeaService {
     }
 
     //create
-    async create(idea) {
-        const { title, desc, content, category_id, user_id, submission_id } = idea
+    async create(user, data) {
+        const { title, desc, content, category_id, submission_id } = data
+        const {username} = user
 
         if (await Idea.findOne({ title })) throw new BadRequestError("Title existed")
 
         const foundCategory = await categoryService.findOne(category_id)
 
-        const foundUser = await userService.findOne(user_id)
-
         const foundSubmission = await submissionService.findOne(submission_id)
+
+        //can truyen vao 1 cai object
+        const foundUser = await userService.findOne({username})
 
         const newIdea = new Idea({
             title,
@@ -38,25 +40,18 @@ class IdeaService {
                 id: foundCategory._id,
                 name: foundCategory.name
             },
-            user: {
-                id: foundUser._id,
-                author: {
-                    username,
-                },
-                profile: {
-                    first_name,
-                    last_name,
-                    email,
-                    phone,
-                    avatar_path
-                }
-            },
             submission: {
                 id: foundSubmission._id,
                 name: foundSubmission.name
-            }
+            },
+            author: {
+                id: foundUser._id,
+                username: foundUser.name,
+                profile: foundUser.profile
+            },
         })
 
+        console.log(newIdea);
         const createIdea = await newIdea.save();
         return createIdea;
     }
